@@ -1,0 +1,25 @@
+% Accuracy with confidence intervals. Keep intervals in math mode.
+\begin{table}[t]
+\centering
+\caption{Accuracy with bootstrap confidence intervals.}
+\label{tab:template-confidence-intervals}
+\begin{facttable}
+\begin{tabularx}{0.92\linewidth}{F *{3}{N}}
+\toprule
+\facttableHeaderCell{Method} & \facttableHeaderCell{Dataset A} &
+\facttableHeaderCell{Dataset B} & \facttableHeaderCell{Overall} \\
+\midrule
+Baseline & \makecell[r]{71.20\\[-1pt]\scriptsize [69.4,73.0]} &
+\makecell[r]{68.40\\[-1pt]\scriptsize [66.2,70.6]} &
+\makecell[r]{69.80\\[-1pt]\scriptsize [68.0,71.6]} \\
+Reference & \makecell[r]{77.45\\[-1pt]\scriptsize [75.8,79.0]} &
+\makecell[r]{73.90\\[-1pt]\scriptsize [71.7,76.1]} &
+\makecell[r]{75.68\\[-1pt]\scriptsize [74.1,77.3]} \\
+\facttableFactRow
+\facttableBestText{Ours} & \facttableBestCell{\makecell[r]{83.33\\[-1pt]\scriptsize [81.9,84.8]}} &
+\facttableBestCell{\makecell[r]{80.70\\[-1pt]\scriptsize [78.6,82.8]}} &
+\facttableBestCell{\makecell[r]{82.02\\[-1pt]\scriptsize [80.8,83.3]}} \\
+\bottomrule
+\end{tabularx}
+\end{facttable}
+\end{table}

@@ -1,0 +1,25 @@
+% Multiple named blocks in one ablation table.
+\begin{table}[t]
+\centering
+\caption{Ablation table with independent metric blocks.}
+\label{tab:template-ablation-sections}
+\begin{facttable}
+\begin{tabular*}{0.94\linewidth}{@{\extracolsep{\fill}}lrrr@{}}
+\toprule
+\multicolumn{4}{c}{\textbf{Selection controls}} \\
+\cmidrule(lr){1-4}
+\textbf{Setting} & \textbf{Accuracy} & \textbf{Attention KL} & \textbf{Delta} \\
+\midrule
+Coordinate & 77.00 & 0.410 & 0.00 \\
+Attention guided & \facttableBestCell{83.33} & \facttableBestCell{0.182} & \facttableBestCell{+6.33} \\
+\addlinespace
+\multicolumn{4}{c}{\textbf{Fit controls}} \\
+\cmidrule(lr){1-4}
+\textbf{Setting} & \textbf{Accuracy} & \textbf{Value error} & \textbf{Delta} \\
+\midrule
+Uniform fit & 79.12 & 0.280 & 0.00 \\
+Sensitivity weighted & \facttableBestCell{83.33} & \facttableBestCell{0.136} & \facttableBestCell{+4.21} \\
+\bottomrule
+\end{tabular*}
+\end{facttable}
+\end{table}

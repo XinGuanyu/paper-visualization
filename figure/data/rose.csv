@@ -1,0 +1,19 @@
+category,series,value,group
+Metric A,Series A,72,Quality
+Metric A,Series B,88,Quality
+Metric A,Series C,64,Quality
+Metric B,Series A,85,Quality
+Metric B,Series B,69,Quality
+Metric B,Series C,78,Quality
+Metric C,Series A,63,Quality
+Metric C,Series B,81,Quality
+Metric C,Series C,92,Quality
+Metric D,Series A,90,Efficiency
+Metric D,Series B,74,Efficiency
+Metric D,Series C,68,Efficiency
+Metric E,Series A,77,Efficiency
+Metric E,Series B,95,Efficiency
+Metric E,Series C,83,Efficiency
+Metric F,Series A,86,Efficiency
+Metric F,Series B,66,Efficiency
+Metric F,Series C,91,Efficiency

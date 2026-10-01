@@ -1,0 +1,6 @@
+model,auc,ci_low,ci_high
+Logistic regression,0.77,0.71,0.84
+Decision tree,0.63,0.56,0.71
+k-NN,0.78,0.73,0.82
+SVM (linear),0.80,0.76,0.85
+Random forest,0.78,0.74,0.83

@@ -1,0 +1,30 @@
+% Two compact tables aligned inside one float.
+\begin{table}[t]
+\centering
+\begin{minipage}[t]{0.55\linewidth}
+\centering
+\captionof{table}{Cross-family quality}
+\label{tab:template-side-by-side-quality}
+\begin{facttable}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrr@{}}
+\toprule Direction & Native & Ours \\
+\midrule Qwen $\rightarrow$ Llama & 77.00 & \facttableBestCell{83.33} \\
+Mistral $\rightarrow$ Llama & 68.62 & \facttableBestCell{79.10} \\
+\bottomrule
+\end{tabular*}
+\end{facttable}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.40\linewidth}
+\centering
+\captionof{table}{Prefix scaling}
+\label{tab:template-side-by-side-scaling}
+\begin{facttable}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrr@{}}
+\toprule Prefix & Acc. & TTFT \\
+\midrule 1K & 95.4 & 21.6 \\
+32K & 92.4 & 168.2 \\
+\bottomrule
+\end{tabular*}
+\end{facttable}
+\end{minipage}
+\end{table}

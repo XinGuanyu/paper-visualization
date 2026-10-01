@@ -1,0 +1,23 @@
+% Long direction table with block rows and wrapped text.
+\begin{table}[t]
+\centering
+\caption{Results grouped by source--target direction.}
+\label{tab:template-direction-blocks}
+\begin{facttable}
+\begin{tabularx}{0.98\linewidth}{F *{3}{N}}
+\toprule
+\textbf{Direction or condition} & \textbf{Accuracy} & \textbf{Retention} & \textbf{Delta} \\
+\midrule
+\multicolumn{4}{l}{\textit{Qwen3-8B $\rightarrow$ Llama-3.1-8B}} \\
+\cmidrule(lr){1-4}
+Coordinate baseline & 77.00 & 100.00 & 0.00 \\
+Selection and fit & \facttableBestCell{83.33} & \facttableBestCell{95.40} & \facttableBestCell{+6.33} \\
+\addlinespace
+\multicolumn{4}{l}{\textit{Mistral-7B $\rightarrow$ Llama-3.2-3B}} \\
+\cmidrule(lr){1-4}
+Coordinate baseline & 68.62 & 100.00 & 0.00 \\
+Selection only & 73.10 & 91.20 & +4.48 \\
+\bottomrule
+\end{tabularx}
+\end{facttable}
+\end{table}

@@ -1,0 +1,17 @@
+category,series,value
+accuracy,System A,82
+accuracy,System B,76
+accuracy,System C,88
+accuracy,System D,79
+latency,System A,44
+latency,System B,57
+latency,System C,39
+latency,System D,52
+throughput,System A,71
+throughput,System B,68
+throughput,System C,84
+throughput,System D,75
+memory,System A,48
+memory,System B,61
+memory,System C,46
+memory,System D,55

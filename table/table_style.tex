@@ -1,0 +1,58 @@
+% Shared style for reusable LaTeX table templates.
+\RequirePackage{array}
+\RequirePackage{booktabs}
+\RequirePackage{colortbl}
+\RequirePackage{makecell}
+\RequirePackage{multirow}
+\RequirePackage{tabularx}
+\RequirePackage{xcolor}
+
+\providecolor{facttableaccent}{HTML}{2397FA}
+\providecolor{facttablewash}{HTML}{F2F8FF}
+\providecolor{factblue}{HTML}{2397FA}
+\providecolor{factpink}{HTML}{F76AAE}
+\providecolor{factorange}{HTML}{FCBA70}
+\providecolor{factgreen}{HTML}{7DD277}
+\providecolor{factpurple}{HTML}{B597D5}
+\providecolor{factcoral}{HTML}{EF8B8B}
+\providecolor{factred}{HTML}{D84A58}
+\providecolor{factamber}{HTML}{ED9239}
+\providecolor{rulegray}{HTML}{C9CED6}
+\providecolor{headerwash}{HTML}{F3F6F9}
+\providecolor{summarywash}{HTML}{F6F8FA}
+\providecolor{factsummary}{HTML}{E5F1FF}
+\providecolor{timegray}{HTML}{68727E}
+
+\newcommand{\facttablecompact}{%
+  \setlength{\tabcolsep}{4pt}%
+  \renewcommand{\arraystretch}{1.08}%
+  \setlength{\aboverulesep}{0.35ex}%
+  \setlength{\belowrulesep}{0.35ex}%
+  \setlength{\cmidrulekern}{0.4em}%
+}
+\newenvironment{facttable}{\begingroup\facttablecompact}{\endgroup}
+\newcommand{\facttableNumCol}[1]{>{\raggedleft\arraybackslash}p{#1}}
+\newcommand{\facttableTextCol}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{F}{>{\raggedright\arraybackslash}X}
+\newcolumntype{N}{>{\raggedleft\arraybackslash}X}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\newcommand{\facttableTextX}{F}
+\newcommand{\facttableNumX}{N}
+\newcommand{\facttableCenterX}{C}
+\newcommand{\facttableHeaderCell}[1]{\cellcolor{headerwash}\textbf{#1}}
+\newcommand{\facttableBestCell}[1]{%
+  \begingroup\setlength{\fboxsep}{1.05pt}\setlength{\fboxrule}{0.35pt}%
+  \fcolorbox{facttableaccent}{facttablewash}{\bfseries #1}\endgroup}
+\newcommand{\facttableBestText}[1]{\textcolor{factblue}{\textbf{#1}}}
+\newcommand{\facttableSummaryRow}{\rowcolor{summarywash}}
+\newcommand{\facttableFactRow}{\rowcolor{facttablewash}}
+\newcommand{\facttableSummaryCell}[1]{\cellcolor{summarywash}#1}
+\newcommand{\facttableFactCell}[1]{\cellcolor{factsummary}#1}
+\newcommand{\facttableMetricLabel}[1]{\textcolor{timegray}{#1}}
+\newcommand{\facttableMetricBlock}[2]{%
+  \begin{tabular}[t]{@{}l@{}}#1\\[-0.25ex]\facttableMetricLabel{#2}\end{tabular}}
+\newcommand{\facttableBarCell}[3]{%
+  \begingroup\makebox[#2][l]{\color{#1!24!white}\rule[-0.45ex]{#3#2}{2.0ex}}\endgroup}
+\newcommand{\facttableReset}{%
+  \setlength{\tabcolsep}{6pt}\renewcommand{\arraystretch}{1}%
+  \setlength{\aboverulesep}{0.4ex}\setlength{\belowrulesep}{0.65ex}}

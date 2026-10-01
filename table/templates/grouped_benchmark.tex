@@ -1,0 +1,25 @@
+% Multi-level benchmark header with grouped metrics.
+\begin{table}[t]
+\centering
+\caption{Grouped benchmark results with reusable multi-level headers.}
+\label{tab:template-grouped-benchmark}
+\begin{facttable}
+\begin{tabular*}{0.98\linewidth}{@{\extracolsep{\fill}}l*{6}{r}@{}}
+\toprule
+\multirow{2}{*}{\textbf{Method}} &
+\multicolumn{2}{c}{\textbf{Quality}} &
+\multicolumn{2}{c}{\textbf{Efficiency}} &
+\multicolumn{2}{c}{\textbf{Robustness}} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}
+& Dataset A & Dataset B & Mean & Memory & Seed 1 & Seed 2 \\
+\midrule
+Baseline & 71.2 & 68.4 & 1.00 & 12.8 & 70.1 & 69.8 \\
+Reference & 77.5 & 73.9 & 0.82 & 10.4 & 75.8 & 75.3 \\
+\facttableFactRow
+\facttableBestText{Ours} & \facttableBestCell{83.3} & \facttableBestCell{80.7} &
+\facttableFactCell{\facttableBestText{0.61}} & \facttableBestCell{8.2} &
+\facttableBestCell{82.9} & \facttableBestCell{82.5} \\
+\bottomrule
+\end{tabular*}
+\end{facttable}
+\end{table}

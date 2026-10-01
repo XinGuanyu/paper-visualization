@@ -1,0 +1,17 @@
+x,y,series,size,label
+18,42,Family A,28,Run A1
+31,55,Family A,44,Run A2
+48,63,Family A,66,Run A3
+67,78,Family A,92,Run A4
+22,34,Family B,36,Run B1
+39,47,Family B,52,Run B2
+57,69,Family B,78,Run B3
+76,82,Family B,108,Run B4
+15,58,Family C,32,Run C1
+36,66,Family C,48,Run C2
+59,74,Family C,72,Run C3
+83,88,Family C,124,Run C4
+25,28,Family D,40,Run D1
+44,51,Family D,58,Run D2
+64,61,Family D,86,Run D3
+88,73,Family D,140,Run D4

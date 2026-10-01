@@ -1,0 +1,27 @@
+% Two metrics per method, using the paper's paired-row pattern.
+\begin{table}[t]
+\centering
+\caption{Paired quality and cost metrics.}
+\label{tab:template-paired-metrics}
+\begin{facttable}
+\begin{tabular*}{0.92\linewidth}{@{\extracolsep{\fill}}l*{4}{r}@{}}
+\toprule
+\multirow{2}{*}{\textbf{Method}} &
+\multicolumn{2}{c}{Quality} & \multicolumn{2}{c}{Cost} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+& Accuracy & Retention & Handoff (ms) & Memory (GiB) \\
+\midrule
+\multirow{2}{*}{Baseline}
+& 71.20 & 84.31 & \facttableMetricLabel{35.82} & \facttableMetricLabel{14.1} \\
+& \multicolumn{2}{c}{\facttableMetricLabel{target-native reference}} &
+\multicolumn{2}{c}{\facttableMetricLabel{lower is better}} \\
+\midrule
+\multirow{2}{*}{\facttableBestText{Ours}}
+& \facttableBestCell{83.33} & \facttableBestCell{95.40} &
+\facttableFactCell{\facttableBestText{6.13}} & \facttableBestCell{8.4} \\
+& \multicolumn{2}{c}{\facttableMetricLabel{fixed mapper}} &
+\multicolumn{2}{c}{\facttableMetricLabel{resident cache}} \\
+\bottomrule
+\end{tabular*}
+\end{facttable}
+\end{table}

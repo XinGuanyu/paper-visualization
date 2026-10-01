@@ -1,0 +1,21 @@
+axis,series,value
+Accuracy,Series A,0.88
+Accuracy,Series B,0.81
+Accuracy,Series C,0.84
+Accuracy,Series D,0.76
+Precision,Series A,0.79
+Precision,Series B,0.92
+Precision,Series C,0.74
+Precision,Series D,0.86
+Recall,Series A,0.91
+Recall,Series B,0.73
+Recall,Series C,0.87
+Recall,Series D,0.8
+F1 Score,Series A,0.84
+F1 Score,Series B,0.82
+F1 Score,Series C,0.78
+F1 Score,Series D,0.89
+AUC,Series A,0.93
+AUC,Series B,0.85
+AUC,Series C,0.9
+AUC,Series D,0.77

@@ -1,0 +1,26 @@
+% In-cell horizontal bars for factorial or capacity comparisons.
+\newlength{\factbarcellwidth}
+\setlength{\factbarcellwidth}{0.10\linewidth}
+\begin{table}[t]
+\centering
+\caption{Factorial comparison with compact in-cell bars.}
+\label{tab:template-in-cell-bars}
+\begin{facttable}
+\begin{tabular*}{0.98\linewidth}{@{\extracolsep{\fill}}l*{4}{c}@{}}
+\toprule
+\textbf{Direction} & \textbf{Coordinate} & \textbf{Selection} & \textbf{Fit} & \textbf{Full method} \\
+\midrule
+Qwen3 $\rightarrow$ Llama &
+\facttableBarCell{factblue}{\factbarcellwidth}{0.46}\,45.90 &
+\facttableBarCell{factgreen}{\factbarcellwidth}{0.62}\,62.11 &
+\facttableBarCell{factorange}{\factbarcellwidth}{0.53}\,52.73 &
+\facttableBarCell{factred}{\factbarcellwidth}{0.63}\,\textbf{62.89} \\
+Mistral $\rightarrow$ Llama &
+\facttableBarCell{factblue}{\factbarcellwidth}{0.33}\,33.40 &
+\facttableBarCell{factgreen}{\factbarcellwidth}{0.31}\,31.45 &
+\facttableBarCell{factorange}{\factbarcellwidth}{0.54}\,54.30 &
+\facttableBarCell{factred}{\factbarcellwidth}{0.55}\,\textbf{55.27} \\
+\bottomrule
+\end{tabular*}
+\end{facttable}
+\end{table}

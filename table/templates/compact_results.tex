@@ -1,0 +1,20 @@
+% Compact result table. Edit the caption, label, headers, and body rows.
+\begin{table}[t]
+\centering
+\caption{Compact method comparison. Replace the example rows with experiment values.}
+\label{tab:template-compact-results}
+\begin{facttable}
+\begin{tabularx}{0.92\linewidth}{F *{3}{N}}
+\toprule
+\facttableHeaderCell{Method} & \facttableHeaderCell{Accuracy} &
+\facttableHeaderCell{Retention} & \facttableHeaderCell{Latency} \\
+\midrule
+Baseline & 71.20 & 84.31 & 24.8 \\
+Reference & 77.45 & 91.26 & 15.7 \\
+\facttableFactRow
+\facttableBestText{Ours} & \facttableBestCell{83.33} &
+\facttableFactCell{\facttableBestText{95.40}} & \facttableBestCell{6.13} \\
+\bottomrule
+\end{tabularx}
+\end{facttable}
+\end{table}
